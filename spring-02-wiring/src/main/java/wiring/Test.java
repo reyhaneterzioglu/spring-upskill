@@ -11,7 +11,6 @@ public class Test {
         ApplicationContext container = new AnnotationConfigApplicationContext(ComputerConfig.class);
 
 
-
     }
 }
 
