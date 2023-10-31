@@ -24,4 +24,32 @@ public class ComputerConfig {
         return new DellCase("220B", "Dell", "240");
 
     }
+
+//    @Bean
+//    public PC pc(){
+//
+//        Monitor monitor = new SonyMonitor("25 inch Beast", "Sony", 25);
+//        Case theCase = new DellCase("220B", "Dell", "240");
+//
+//        return new PC(theCase, monitor);
+//
+//    }
+
+
+    //----------- FIRST WAY -----------
+//
+//    @Bean
+//    public PC pc(){
+//
+//        return new PC(caseBean(), sonyMonitor());
+//
+//    }
+
+    // ----------- SECOND WAY -----------
+    @Bean
+    public PC pc(Case theCase, Monitor monitor){
+
+        return new PC(theCase, monitor);
+
+    }
 }

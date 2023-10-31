@@ -7,6 +7,9 @@ public class Test {
         Milk milk = new Milk();
         Cheese cheese = new Cheese();
 
+//        Bread bread = new Bread();
+
+//        ShoppingCart shoppingCart = new ShoppingCart(milk, cheese, bread);
         ShoppingCart shoppingCart = new ShoppingCart(milk, cheese);
 
     }

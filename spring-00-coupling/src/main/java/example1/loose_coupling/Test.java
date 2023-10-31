@@ -10,8 +10,10 @@ public class Test {
         List<Product> productList = new ArrayList<>();
 
         Product milk = new Milk();
+//        Product bread = new Bread();
 
         productList.add(milk);
+//        productList.add(bread);
 
         ShoppingCart shoppingCart = new ShoppingCart(productList);
 

@@ -10,6 +10,9 @@ public class Test {
 
         ApplicationContext container = new AnnotationConfigApplicationContext(ComputerConfig.class);
 
+        PC thePC = container.getBean(PC.class);
+
+        System.out.println(thePC.getMonitor().getManufacturer());
 
     }
 }
