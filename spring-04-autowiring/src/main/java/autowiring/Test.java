@@ -10,6 +10,14 @@ public class Test {
 
         ApplicationContext container = new AnnotationConfigApplicationContext(ProductConfig.class);
 
+//
+//        System.out.println(container.getBean(Milk.class));
+//
+//        System.out.println(container.getBean(Cheese.class));
+
+        Cheese cheese = container.getBean(Cheese.class);
+
+        System.out.println(cheese.getMilk());
 
     }
 }

@@ -1,5 +1,6 @@
 package with_IoC.service.impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import with_IoC.model.Cart;
 import with_IoC.model.CartItem;
 import with_IoC.model.Product;
@@ -16,6 +17,7 @@ public class CartServiceImpl implements CartService {
 
     public ProductService productService;
 
+    @Autowired
     public CartServiceImpl(ProductService productService) {
         this.productService = productService;
     }

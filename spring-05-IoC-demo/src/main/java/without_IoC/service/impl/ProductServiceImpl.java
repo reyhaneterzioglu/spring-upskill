@@ -25,7 +25,7 @@ public class ProductServiceImpl implements ProductService {
     public Product findById(int productId) {
 
         return productDatabase.stream().filter(product -> product.getId() == productId).findFirst().orElseThrow();
-
+//
 //        for (Product product : productDatabase) {
 //
 //            if (product.getId() == productId) return product;

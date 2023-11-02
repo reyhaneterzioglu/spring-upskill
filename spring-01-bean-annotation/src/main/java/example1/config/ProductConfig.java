@@ -19,6 +19,14 @@ public class ProductConfig {
 
     }
 
+//    @Bean
+////    @Primary
+//    public Product milkBean2(){
+//
+//        return new Milk();
+//
+//    }
+
     @Bean("cheese")
     public Product cheeseBean(){
 
