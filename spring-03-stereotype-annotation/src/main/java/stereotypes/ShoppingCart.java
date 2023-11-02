@@ -11,5 +11,6 @@ public class ShoppingCart {
     public ShoppingCart(List<Product> productList) {
         this.id = 1;
         this.productList = productList;
+        System.out.println("the cart is initialized successfully");
     }
 }
